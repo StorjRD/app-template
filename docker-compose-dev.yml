@@ -3,12 +3,11 @@ version: "3.8"
 volumes:
   ui-dist:
 
-
 services:
   ui:
     build: ui
     ports:
-        - "127.0.0.1:3000:80"
+      - "127.0.0.1:3000:80"
     volumes:
       - ui-dist:/usr/share/nginx/html
   ui-watcher:
